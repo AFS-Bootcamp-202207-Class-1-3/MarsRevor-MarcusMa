@@ -23,8 +23,11 @@ public class MarsRover {
     }
 //    duplicateCode
     private void turnRight() {
-        if(location.getDirection().equals("N")){
+        String direction = location.getDirection();
+        if(direction.equals("N")){
             location.setDirection("E");
+        }else if(direction.equals("S")){
+            location.setDirection("W");
         }
     }
 
