@@ -11,6 +11,12 @@ public class MarsRover {
         return location;
     }
 
+    public void splitCommand(String command){
+        for(int i=0;i < command.length();i++) {
+            executeCommand(String.valueOf(command.charAt(i)));
+        }
+    }
+
     public void executeCommand(String command) {
         if (command.equals("M")) {
             move();

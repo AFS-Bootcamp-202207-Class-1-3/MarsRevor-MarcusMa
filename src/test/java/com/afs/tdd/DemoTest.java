@@ -152,14 +152,14 @@ class DemoTest {
         Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
     }
     @Test
-    void should_return_2_0_N_when_executeCommand_given_0_0_N_Command() {
+    void should_return_0_2_N_when_executeCommand_given_0_0_N_Command() {
 //        given
         String command = "MRMLMLMR";
         Location initLocation = new Location(0,0,"N");
-        String expectedResult = "2 0 N";
+        String expectedResult = "0 2 N";
 //        when
         MarsRover marsRover = new MarsRover(initLocation);
-        marsRover.executeCommand(command);
+        marsRover.splitCommand(command);
 //        then
         Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
     }
