@@ -67,4 +67,16 @@ class DemoTest {
 //        then
         Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
     }
+    @Test
+    void should_return_0_0_W_when_executeCommand_given_0_0_S_R() {
+//        given
+        String command = "R";
+        Location initLocation = new Location(0,0,"S");
+        String expectedResult = "0 0 W";
+//        when
+        MarsRover marsRover = new MarsRover(initLocation);
+        marsRover.executeCommand(command);
+//        then
+        Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
+    }
 }
