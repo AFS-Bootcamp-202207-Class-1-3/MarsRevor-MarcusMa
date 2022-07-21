@@ -30,6 +30,8 @@ public class MarsRover {
             location.setDirection("W");
         }else if(direction.equals("E")){
             location.setDirection("S");
+        }else if(direction.equals("W")){
+            location.setDirection("N");
         }
     }
 
@@ -42,7 +44,7 @@ public class MarsRover {
         }else if(direction.equals("E")){
             location.setDirection("N");
         }else if(direction.equals("W")){
-            location.setDirection("N");
+            location.setDirection("S");
         }
     }
 
