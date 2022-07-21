@@ -140,7 +140,7 @@ class DemoTest {
         Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
     }
     @Test
-    void should_return_0_0_S_when_executeCommand_given_0_0_W_R() {
+    void should_return_0_0_N_when_executeCommand_given_0_0_W_R() {
 //        given
         String command = "R";
         Location initLocation = new Location(0,0,"W");
