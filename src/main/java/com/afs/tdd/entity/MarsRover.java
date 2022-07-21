@@ -35,8 +35,11 @@ public class MarsRover {
     }
 
     private void move() {
-        if (location.getDirection().equals("N")) {
+        String direction = location.getDirection();
+        if (direction.equals("N")) {
             location.setLocationY(location.getLocationY() + 1);
+        }else if(direction.equals("S")){
+            location.setLocationY(location.getLocationY() - 1);
         }
     }
 
