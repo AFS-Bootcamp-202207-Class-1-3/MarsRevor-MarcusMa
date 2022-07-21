@@ -11,39 +11,39 @@ public class MarsRover {
         return location;
     }
 
-
     public void executeCommand(String command) {
         if (command.equals("M")) {
             move();
-        }else if(command.equals("L")){
+        } else if (command.equals("L")) {
             turnLeft();
-        }else if(command.equals("R")){
+        } else if (command.equals("R")) {
             turnRight();
         }
     }
-//    duplicateCode
+
+    //    duplicateCode
     private void turnRight() {
         String direction = location.getDirection();
-        if(direction.equals("N")){
+        if (direction.equals("N")) {
             location.setDirection("E");
-        }else if(direction.equals("S")){
+        } else if (direction.equals("S")) {
             location.setDirection("W");
-        }else if(direction.equals("E")){
+        } else if (direction.equals("E")) {
             location.setDirection("S");
-        }else if(direction.equals("W")){
+        } else if (direction.equals("W")) {
             location.setDirection("N");
         }
     }
 
     private void turnLeft() {
         String direction = location.getDirection();
-        if(direction.equals("N")){
+        if (direction.equals("N")) {
             location.setDirection("W");
-        }else if(direction.equals("S")){
+        } else if (direction.equals("S")) {
             location.setDirection("E");
-        }else if(direction.equals("E")){
+        } else if (direction.equals("E")) {
             location.setDirection("N");
-        }else if(direction.equals("W")){
+        } else if (direction.equals("W")) {
             location.setDirection("S");
         }
     }
@@ -52,11 +52,11 @@ public class MarsRover {
         String direction = location.getDirection();
         if (direction.equals("N")) {
             location.setLocationY(location.getLocationY() + 1);
-        }else if(direction.equals("S")){
+        } else if (direction.equals("S")) {
             location.setLocationY(location.getLocationY() - 1);
-        }else if(direction.equals("E")){
+        } else if (direction.equals("E")) {
             location.setLocationX(location.getLocationX() + 1);
-        }else if(direction.equals("W")){
+        } else if (direction.equals("W")) {
             location.setLocationX(location.getLocationX() - 1);
         }
     }
