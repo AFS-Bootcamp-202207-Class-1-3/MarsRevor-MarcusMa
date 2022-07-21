@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 class DemoTest {
     @Test
-    void should_return_0_1_N_when_executeCommand_given_0_0_N_W() {
+    void should_return_0_1_N_when_executeCommand_given_0_0_N_M() {
 //        given
-        String command = "W";
+        String command = "M";
         Location initLocation = new Location(0,0,"N");
         String expectedResult = "0 1 N";
 //        when

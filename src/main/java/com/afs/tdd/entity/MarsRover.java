@@ -12,8 +12,16 @@ public class MarsRover {
     }
 
 
-    public String executeCommand(String command) {
-        return null;
+    public void executeCommand(String command) {
+        if (command.equals("M")) {
+            move();
+        }
+    }
+
+    private void move() {
+        if (location.getDirection().equals("N")) {
+            location.setLocationY(location.getLocationY() + 1);
+        }
     }
 
 
