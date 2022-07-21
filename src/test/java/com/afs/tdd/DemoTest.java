@@ -42,6 +42,17 @@ class DemoTest {
         marsRover.executeCommand(command);
 //        then
         Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
-
+    }
+    @Test
+    void should_return_0_negative1_S_when_executeCommand_given_0_0_S_M() {
+//        given
+        String command = "M";
+        Location initLocation = new Location(0,0,"S");
+        String expectedResult = "0 -1 S";
+//        when
+        MarsRover marsRover = new MarsRover(initLocation);
+        marsRover.executeCommand(command);
+//        then
+        Assertions.assertEquals(expectedResult,marsRover.getLocation().toString());
     }
 }
